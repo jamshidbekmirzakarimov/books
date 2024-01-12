@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Rotterburg Display Font;
+  src: url(./assets/fonts/rotterburg.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-box {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.active {
+  border-bottom: 3px solid #c9ac8c;
+}
+
+.ant-dropdown-menu-item:last-child:hover {
+  background-color: rgb(246, 130, 130) !important;
+  color: white !important;
+}
+
+.ant-btn-primary {
+  background-color: #c9ac8c !important;
+}
+
+.ant-btn {
+  padding: 7px 16px !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.banner-slide {
+  background-image: url("./assets/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+:where(.css-dev-only-do-not-override-v5v2fc).ant-carousel .slick-dots {
+  justify-content: start !important;
+  padding-left: 86px;
+  padding-bottom: 65px;
+}
+
+.ant-switch-inner-unchecked {
+  background-color: #8c8c8c !important;
+}
+
+.ant-switch-inner-checked {
+  background-color: red !important;
+}
